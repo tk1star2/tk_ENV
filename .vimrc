@@ -20,4 +20,4 @@ colorscheme jellybeans
 
 set background=dark
 set t_Co=256
-set mouse = a "wheel able
+set mouse=a "wheel able
