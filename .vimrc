@@ -22,3 +22,5 @@ set background=dark
 set t_Co=256
 set mouse=a "wheel able
 set clipboard=unnamed
+set expandtab
+set tabstop=4
