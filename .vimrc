@@ -7,10 +7,12 @@ set shiftwidth=4	"indent width
 set paste
 set showmatch
 
-au BufReadPost *
-\ if line("'\"") > 0 && line("'\"") <= line("$") |
-\ exe "norm g`\"" |
-\ endif
+if has("autocmd")
+    au BufReadPost *
+    \ if line("'\"") > 0 && line("'\"") <= line("$") |
+    \ exe "norm g`\"" |
+    \ endif
+endif
 
 if has("syntax")
  syntax on
@@ -22,5 +24,10 @@ set background=dark
 set t_Co=256
 set mouse=a "wheel able
 set clipboard=unnamed
-set expandtab
+
+set smartindent
 set tabstop=4
+set expandtab
+
+set encoding=utf-8
+set fileencoding=utf-8
